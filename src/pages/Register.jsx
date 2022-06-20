@@ -105,7 +105,7 @@ const Register = () => {
           password: password
         }
 
-        axios.post("https://shopperback.herokuapp.com/api/v1register",data)
+        axios.post("https://shopperback.herokuapp.com/api/v1/register",data)
         .then(res => {
           setMessage(res.data.message)
             setOpen(true);   
