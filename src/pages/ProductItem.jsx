@@ -152,7 +152,7 @@ const ProductItem = () => {
         const decoded = jwt_decode(localStorage.getItem('token'));
     
         const authAxios = axios.create({
-          baseURL: `https://shopperback.herokuapp.com/api/v1/`,
+          baseURL: `https://shopperback.herokuapp.com/api/v1`,
           headers: {
             Authorization: 'Bearer ' + localStorage.getItem('token')
           },

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const token = localStorage.getItem('token')
 const authAxios = axios.create({
-    baseURL: `https://shopperback.herokuapp.com/api/v1/`,
+    baseURL: `https://shopperback.herokuapp.com/api/v1`,
     headers: {
       Authorization: 'Bearer ' + token
     },

@@ -106,7 +106,7 @@ const Login = () => {
         password: password
       }
 
-      axios.post("https://shopperback.herokuapp.com/api/v1/login",data)
+      axios.post("https://shopperback.herokuapp.com/api/v1login",data)
       .then(res => {
         setMessage(res.data.message)
           setOpen(true);
